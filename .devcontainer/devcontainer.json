@@ -3,7 +3,7 @@
     "image": "mcr.microsoft.com/devcontainers/cpp:latest",
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2": {},
-        "ghcr.io/devcontainers/features/cmake:1": {},
+        "ghcr.io/devcontainers/features/cmake:latest": {},
         "ghcr.io/devcontainers/features/vscode-cpptools:1": {}
     },
     "customizations": {
