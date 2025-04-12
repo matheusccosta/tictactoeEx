@@ -2,7 +2,7 @@
     "name": "C++ Dev Container",
     "image": "mcr.microsoft.com/devcontainers/cpp:latest",
     "features": {
-        "ghcr.io/devcontainers/features/common-utils:2": {},
+        "ghcr.io/devcontainers/features/common-utils:2": {}
     },
     "customizations": {
         "vscode": {
@@ -13,7 +13,7 @@
             ]
         }
     },
-    "workspaceFolder": "/workspace/tictactoeEx",
+    "workspaceFolder": "/workspaces/tictactoeEx",
     "runArgs": [
         "--cap-add=SYS_PTRACE",
         "--security-opt=seccomp=unconfined"
