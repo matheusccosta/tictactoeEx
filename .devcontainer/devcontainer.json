@@ -2,7 +2,9 @@
     "name": "C++ Dev Container",
     "image": "mcr.microsoft.com/devcontainers/cpp:latest",
     "features": {
-        "ghcr.io/devcontainers/features/common-utils:2": {}
+        "ghcr.io/devcontainers/features/common-utils:2": {},
+        "ghcr.io/devcontainers/features/cmake:1": {},
+        "ghcr.io/devcontainers/features/vscode-cpptools:1": {}
     },
     "customizations": {
         "vscode": {
@@ -13,7 +15,8 @@
             ]
         }
     },
-    "workspaceFolder": "/workspaces/tictactoeEx",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+    "workspaceFolder": "/workspace/tictactoeEx",
     "runArgs": [
         "--cap-add=SYS_PTRACE",
         "--security-opt=seccomp=unconfined"
